@@ -24,4 +24,5 @@ class PoliceDog(Dog):
         self.rescued = []
 
     def rescue(self, person):
-        self.rescued.append(person)
+        self.rescued.append(person.get_name())
+        print(f"Give me a treat already! I rescued {person.get_name()}")
